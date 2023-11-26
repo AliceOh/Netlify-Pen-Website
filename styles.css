@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Home Page Styles */
+.intro img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Product Page Styles */
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+/* .product {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} */
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+/* Flexbox layout for products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .product {
+        flex-basis: 30%; /* Adjusts the width of each product to fit 3 in a row */
+    }
+}
+
+
+/* Contact Page Styles */
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
